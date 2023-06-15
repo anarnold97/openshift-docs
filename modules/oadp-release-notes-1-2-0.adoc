@@ -6,13 +6,13 @@
 [id="migration-oadp-release-notes-1-2-0_{context}"]
 = OADP 1.2.0 release notes
 
-The OADP 1.2.0 release notes include new features and lists of fixed bugs and known issues.
+The OADP 1.2.0 release notes include information about new features, bug fixes, and known issues.
 
 [id="new-features_{context}"]
 == New features
 
 .link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.12/html/backup_and_restore/application-backup-and-restore#installing-oadp-aws[Resource timeouts]
-The new `resourceTimeout` option specifies how many minutes to wait for several Velero resources before timeout. This applies for such resources as Velero CRD availability, `volumeSnapshot` deletion, and backup repository availablity. 10 minutes is the default setting.
+The new `resourceTimeout` option specifies the timeout duration in minutes for waiting on various Velero resources. This option applies to resources such as Velero CRD availability, `volumeSnapshot` deletion, and backup repository availability. The default duration is ten minutes.
 
 .link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.11/html/backup_and_restore/application-backup-and-restore#oadp-s3-compatible-backup-storage-providers_about-installing-oadp[AWS S3 compatible backup storage providers]
 You can back up objects and snapshots on AWS S3 compatible providers.
@@ -21,7 +21,7 @@ You can back up objects and snapshots on AWS S3 compatible providers.
 === Technical preview features
 
 .link:https://access.redhat.com/documentation/en-us/openshift_container_platform/4.9/html/backup_and_restore/application-backup-and-restore#installing-and-configuring-oadp[Data Mover]
-The OADP Data Mover enables customers to back up Container Storage Interface (CSI) volume snapshots to a remote object store. When Data Mover is enabled, you can restore stateful applications, using CSI volume snapshots pulled from the object store if a failure, accidental deletion, or corruption of the cluster occurs.
+The OADP Data Mover enables you to back up Container Storage Interface (CSI) volume snapshots to a remote object store. When you enable Data Mover, you can restore stateful applications using CSI volume snapshots pulled from the object store in case of accidental cluster deletion, cluster failure, or data corruption.
 
 :FeatureName: OADP Data Mover
 include::snippets/technology-preview.adoc[]
@@ -77,14 +77,5 @@ The following bugs have been fixed in this release:
 [id="known-issues-1-2-0_{context}"]
 == Known issues
 
-This release has the following known issues:
+This release does not have any known issues.
 
-.link:https://issues.redhat.com/browse/OADP-1933[Data Mover backups over CephFS (ODF 4.12) fails]
-
-OADP 1.2.x no longer requires VolSync's privledged movers and can cause errors.
-
-The following errors indicate a failed backup that timed out: `Error: container's runAsUser breaks non-root policy`, and `Error from server (BadRequest): container "restic" in pod "volsync-src-vsb-xxxyyy" is waiting to start: CreateContainerConfigError`.
-
-By default, OADP uses POD/Workloads security context to backup data using Volsync/Data Mover. Also by default, `dpa.spec.features.dataMover.volumeOptions.sourceVolumeOptions.moverSecurityContext` is set to `true`.
-
-link:https://issues.redhat.com/browse/OADP-1933[OADP-1933]
