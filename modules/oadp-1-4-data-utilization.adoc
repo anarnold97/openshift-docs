@@ -9,7 +9,7 @@ The following is an example of observed performance when running {oadp-short} ba
 
 .Transfer Rate
 
-The calculated throughput rate represents the amount of non-zero data contained in a pv(s), used in the backup or restore process divided by the  time taken to process a backup or restore.
+The calculated throughput rate denotes the quantity of non-zero data contained within persistent volumes (PVs) utilized in the backup or restore process, divided by the duration required to process a backup or restore.
 
 This rate allows customers to understand the performance of OADP.
 
