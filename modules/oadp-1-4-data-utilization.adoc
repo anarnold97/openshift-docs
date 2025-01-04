@@ -14,7 +14,7 @@ The calculated throughput rate represents the amount of non-zero data contained 
 This rate allows customers to understand the performance of OADP.
 
 [id="oadp-1-4-data-utilization-single-backup_{context}"]
-== Backups for single pod and pv
+== Backups for single pod and PV
 
 Transfer Rate for FSB with Kopia and CSI Snapshot Datamovement are around 1GB/s depending on storage type
 
