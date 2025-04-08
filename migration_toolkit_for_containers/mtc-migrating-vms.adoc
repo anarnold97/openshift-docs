@@ -101,6 +101,8 @@ The following table explains that to use storage live migrations, you need to ha
 
 include::modules/mtc-deploying-a-vm.adoc[leveloffset=+1]
 
-include::modules/mtc-vm-creating-mig-plan.adoc[leveloffset=+1]
+include::modules/migration-creating-migration-plan-cam.adoc[leveloffset=+1]
+
+include::modules/mtc-vm-creating-mig-plan-yaml.adoc[leveloffset=+1]
 
 include::modules/mtc-migrating-vms-known-issues.adoc[leveloffset=+1]

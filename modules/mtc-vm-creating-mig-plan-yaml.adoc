@@ -2,8 +2,10 @@
 // * migration_toolkit_for_containers/mtc-migrating-vms.adoc
 
 :_mod-docs-content-type: PROCEDURE
-[id="mtc-vm-creating-mig-plan_{context}"]
-= Creating the migration plan
+[id="mtc-vm-creating-mig-plan-yaml_{context}"]
+= Creating the migration plan using YAML manifests
+
+You can create a migration plan using YAML. However, it is recommended to create a migration plan in the {mtc-first} web console.
 
 .Procedure
 
