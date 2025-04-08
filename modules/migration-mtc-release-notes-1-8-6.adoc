@@ -5,16 +5,16 @@
 [id="migration-mtc-release-notes-1-8-6_{context}"]
 = {mtc-full} 1.8.6 release notes
 
-[id="new-features-1-8-6_{context}"]
-== New features
+[id="technical-changes-1-8-6_{context}"]
+== Technical changes
 
-.Multiple migration plans for a namespace
+.Multiple migration plans for a namespace is not supported
 
-Before the release of {mtc-short} 1.8.6, you were unable to have more than one migration plan for a namespace. If another migration plan attempted to use a namespace that was associated with another migration plan, the plan was rejected. 
+{mtc-short} version 1.8.6 and later do not support multiple migration plans for a single namespace.
 
-In {mtc-short} 1.8.6, you can have more than one migration plans associated with the same namespace, if your migration plans do not reference the same persistent volumes (PVs). 
+.VM storage migration
 
-By having more than one migration plan associated with the same namespace, you can design different migration plans for applications that are in the same namespace.
+VM storage migration feature changes status from Technical Preview status to being generally available.
 
 [id="resolved-issues-1-8-6_{context}"]
 == Resolved issues
