@@ -17,7 +17,6 @@ The following limitations apply to the online migration:
 * The VM must be running.
 * The volume housing the disk must not have any of the following limitations:
 ** Shared disks cannot be migrated live.
-** Hotplugged volumes cannot be migrated live.
 ** The `virtio-fs` filesystem volume cannot be migrated live.
 ** LUN-to-Disk and Disk-to-LUN migrations are not supported in `libvirt`.
 ** LUNs must have persistent reservations.
