@@ -7,7 +7,6 @@
 
 The following known issues apply when migrating virtual machine (VM) storage: 
 
-* Migrating VM storage cannot switch to persistent volume (PV) mode.
 * Migrating VM storage can only storage migrate in the same namespace.
 
 [id="mtc-migrating-vms-limitations_{context}"]
